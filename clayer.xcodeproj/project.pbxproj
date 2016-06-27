@@ -14,6 +14,9 @@
 		047FFEF91AB5AE4D0041B780 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047FFEF81AB5AE4D0041B780 /* Images.xcassets */; };
 		047FFEFC1AB5AE4D0041B780 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047FFEFA1AB5AE4D0041B780 /* LaunchScreen.xib */; };
 		047FFF081AB5AE4D0041B780 /* clayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 047FFF071AB5AE4D0041B780 /* clayerTests.m */; };
+		04913F521AB5E4CF00C44F60 /* Model1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04913F501AB5E4CF00C44F60 /* Model1.xcdatamodeld */; };
+		04913F541AB5E5BA00C44F60 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04913F531AB5E5BA00C44F60 /* libsqlite3.dylib */; };
+		04913F561AB5E5C500C44F60 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04913F551AB5E5C500C44F60 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		047FFF011AB5AE4D0041B780 /* clayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		047FFF061AB5AE4D0041B780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		047FFF071AB5AE4D0041B780 /* clayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = clayerTests.m; sourceTree = "<group>"; };
+		04913F511AB5E4CF00C44F60 /* Model1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model1.xcdatamodel; sourceTree = "<group>"; };
+		04913F531AB5E5BA00C44F60 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		04913F551AB5E5C500C44F60 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04913F561AB5E5C500C44F60 /* CoreData.framework in Frameworks */,
+				04913F541AB5E5BA00C44F60 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +71,8 @@
 		047FFEDF1AB5AE4D0041B780 = {
 			isa = PBXGroup;
 			children = (
+				04913F551AB5E5C500C44F60 /* CoreData.framework */,
+				04913F531AB5E5BA00C44F60 /* libsqlite3.dylib */,
 				047FFEEA1AB5AE4D0041B780 /* clayer */,
 				047FFF041AB5AE4D0041B780 /* clayerTests */,
 				047FFEE91AB5AE4D0041B780 /* Products */,
@@ -82,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				047FFEEF1AB5AE4D0041B780 /* AppDelegate.h */,
+				04913F501AB5E4CF00C44F60 /* Model1.xcdatamodeld */,
 				047FFEF01AB5AE4D0041B780 /* AppDelegate.m */,
 				047FFEF21AB5AE4D0041B780 /* ViewController.h */,
 				047FFEF31AB5AE4D0041B780 /* ViewController.m */,
@@ -220,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				047FFEF41AB5AE4D0041B780 /* ViewController.m in Sources */,
+				04913F521AB5E4CF00C44F60 /* Model1.xcdatamodeld in Sources */,
 				047FFEF11AB5AE4D0041B780 /* AppDelegate.m in Sources */,
 				047FFEEE1AB5AE4D0041B780 /* main.m in Sources */,
 			);
@@ -412,6 +424,7 @@
 				047FFF0D1AB5AE4D0041B780 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		047FFF0E1AB5AE4D0041B780 /* Build configuration list for PBXNativeTarget "clayerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,8 +433,23 @@
 				047FFF101AB5AE4D0041B780 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04913F501AB5E4CF00C44F60 /* Model1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04913F511AB5E4CF00C44F60 /* Model1.xcdatamodel */,
+			);
+			currentVersion = 04913F511AB5E4CF00C44F60 /* Model1.xcdatamodel */;
+			name = Model1.xcdatamodeld;
+			path = ../Model1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 047FFEE01AB5AE4D0041B780 /* Project object */;
 }
